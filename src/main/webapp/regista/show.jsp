@@ -48,7 +48,7 @@
 					    	
 					    	<dl class="row">
 							  <dt class="col-sm-3 text-right">Sesso:</dt>
-							  <dd class="col-sm-9">${show_film_attr.sesso}</dd>
+							  <dd class="col-sm-9">${show_regista_attr.sesso}</dd>
 					    	</dl>
 							    
 							  </div>

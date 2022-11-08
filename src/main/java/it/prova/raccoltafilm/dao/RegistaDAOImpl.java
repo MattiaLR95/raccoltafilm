@@ -34,9 +34,11 @@ public class RegistaDAOImpl implements RegistaDAO {
 	}
 
 	@Override
-	public void update(Regista o) throws Exception {
-		// TODO Auto-generated method stub
-
+	public void update(Regista registaInstance) throws Exception {
+		if (registaInstance == null) {
+			throw new Exception("Problema valore in input");
+		}
+		entityManager.merge(registaInstance);
 	}
 
 	@Override

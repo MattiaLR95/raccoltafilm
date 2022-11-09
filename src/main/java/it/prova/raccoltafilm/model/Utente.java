@@ -59,9 +59,14 @@ public class Utente {
 		this.cognome = cognome;
 		this.dateCreated = dateCreated;
 	}
-	
-	
-	
+
+	public Utente(String nome, String cognome, String username) {
+		super();
+		this.nome = nome;
+		this.cognome = cognome;
+		this.username = username;
+	}
+
 	public Utente(String nome, String cognome, String username, Date dateCreated) {
 		super();
 		this.nome = nome;

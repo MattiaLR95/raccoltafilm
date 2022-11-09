@@ -28,7 +28,7 @@ public class ExecuteSearchUtenteServlet extends HttpServlet {
 		String nomeParam = request.getParameter("nome");
 		String cognomeParam = request.getParameter("cognome");
 		String usernameParam = request.getParameter("username");
-		String dateCreatedParam = request.getParameter("dataDiNascita");
+		String dateCreatedParam = request.getParameter("dateCreated");
 
 		Utente example = new Utente(nomeParam, cognomeParam, usernameParam,
 				UtilityForm.parseDateArrivoFromString(dateCreatedParam));

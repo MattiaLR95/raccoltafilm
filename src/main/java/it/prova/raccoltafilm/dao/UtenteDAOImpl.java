@@ -103,15 +103,15 @@ public class UtenteDAOImpl implements UtenteDAO {
 			paramaterMap.put("username", "%" + example.getUsername() + "%");
 		}
 		if (StringUtils.isNotBlank(example.getNome())) {
-			whereClauses.add(" r.nome like :nome ");
+			whereClauses.add(" u.nome like :nome ");
 			paramaterMap.put("nome", "%" + example.getNome() + "%");
 		}
 		if (StringUtils.isNotBlank(example.getCognome())) {
-			whereClauses.add(" r.cognome like :cognome ");
+			whereClauses.add(" u.cognome like :cognome ");
 			paramaterMap.put("cognome", "%" + example.getCognome() + "%");
 		}
 		if (example.getDateCreated() != null) {
-			whereClauses.add("r.dateCreated >= :dateCreated ");
+			whereClauses.add("u.dateCreated >= :dateCreated ");
 			paramaterMap.put("dateCreated", example.getDateCreated());
 		}
 

@@ -50,6 +50,7 @@
 				                        <th>Cognome</th>
 				                        <th>Username</th>
 				                        <th>Date Created</th>
+				                        <th>Azioni</th>
 				                    </tr>
 				                </thead>
 				                <tbody>
@@ -59,6 +60,7 @@
 											<td>${utenteItem.cognome }</td>
 											<td>${utenteItem.username }</td>
 											<td><fmt:formatDate type = "date" value = "${utenteItem.dateCreated }" /></td>
+											<td><a class="btn  btn-sm btn-outline-secondary" href="ExecuteVisualizzaUtenteServlet?idUtente=${utenteItem.id }">Visualizza</a></td>
 										</tr>
 									</c:forEach>
 				                </tbody>

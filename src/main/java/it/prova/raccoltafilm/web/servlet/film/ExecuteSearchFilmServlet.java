@@ -8,11 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.lang3.StringUtils;
 
 import it.prova.raccoltafilm.model.Film;
-import it.prova.raccoltafilm.model.Regista;
-import it.prova.raccoltafilm.model.Sesso;
 import it.prova.raccoltafilm.service.FilmService;
 import it.prova.raccoltafilm.service.MyServiceFactory;
 import it.prova.raccoltafilm.utility.UtilityForm;
